@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$ojf-theme-primary: mat-palette($mat-blue-grey);
+$ojf-theme-accent:  mat-palette($mat-pink, 500, 900, A100);
+$ojf-theme-warn:    mat-palette($mat-deep-orange);
+
+$ojf-theme: mat-light-theme($ojf-theme-primary, $ojf-theme-accent, $ojf-theme-warn);
+
+@include angular-material-theme($ojf-theme);

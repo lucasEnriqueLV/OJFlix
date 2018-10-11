@@ -1,0 +1,18 @@
+.container {
+    flex-direction: row;
+}
+.item:first-child {
+    justify-content: flex-start;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    margin: 5px;
+	padding: 0 10px;
+	text-align: center;
+}
+.item-child {
+    flex: 1;
+}

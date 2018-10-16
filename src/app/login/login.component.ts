@@ -19,14 +19,14 @@ export class LoginComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private auth: AuthenticationService
-    
-
   ) { }
 
   username: string;
   password: string;
+
   ngOnInit() {
   }
+  
   login(): void {
     this.auth.login(this.username, this.password).subscribe(
       (parameter: any) => {

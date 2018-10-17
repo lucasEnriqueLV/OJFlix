@@ -23,7 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/OJFtheme.scss",
+              {
+                "input": "./src/OJFtheme.scss"
+              },
               "src/styles.css"
             ],
             "scripts": []

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CustomMaterialModule } from './modules/material.module';
 import { AppRoutingModule } from './modules/app.routing.module';
@@ -42,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     AuthenticationService,
     AuthenticationGuard
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

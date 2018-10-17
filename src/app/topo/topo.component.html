@@ -2,18 +2,19 @@
   <mat-toolbar class="container" color="primary" role="heading">
     <mat-toolbar-row class="item">
       <div class="logo">
-        [PH]OJFlix logo
+        <img class="icon" src="../../assets/OJFlix-logo.svg" alt="binoculo azul em frente à esfera amarela">
       </div>
     </mat-toolbar-row>
     <mat-toolbar-row class="item">
-      <div class="item-child lupa">
-        [PH]Lupa
+      <div class="item-child">
+          <img class="icon" src="../../assets/search_icon.svg" alt="Lupa">
       </div>
       <div class="item-child perfil" routerLink="perfil">
-        [PH]Perfil
+          <img class="icon" src="../../assets/profile_icon.svg" alt="Silhueta de uma pessoa">
       </div>
       <div class="item-child sair" (click)="sair()">
-        [PH]Sair
+        <img class="icon" src="../../assets/logout_icon.svg" alt="Seta apontando para fora de um retângulo">
+        <span>Logout</span>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>

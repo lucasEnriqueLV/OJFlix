@@ -14,5 +14,24 @@
 	text-align: center;
 }
 .item-child {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     flex: 1;
+}
+.icon {
+    cursor: pointer;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 5px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+}
+.sair {
+    flex: 1;
+    align-items: center;
+    cursor: pointer;
 }

@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { AuthenticationService } from './services/authentication.service';
+import { AuthenticationGuard } from './authentication-guard.service'
 import { HttpModule } from '@angular/http'; 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -38,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
   ],
   providers: [
-    AuthenticationService
+    AuthenticationService,
+    AuthenticationGuard
   ],
   bootstrap: [AppComponent]
 })

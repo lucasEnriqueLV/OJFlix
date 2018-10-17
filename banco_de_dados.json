@@ -1,19 +1,24 @@
 {
   "usuarios": [
     {
-      "username": "username",
-      "password": "password",
+      "username": "admin",
+      "password": "admin",
       "id": 1
     },
     {
-      "username": "admin",
-      "password": "admin",
+      "username": "Joao",
+      "password": "joao",
       "id": 2
     },
     {
-      "username": "admin",
-      "password": "admin",
+      "username": "Maria",
+      "password": "Maria",
       "id": 3
+    },
+    {
+      "username": "Pedro",
+      "password": "Pedro",
+      "id": 4
     }
   ]
 }

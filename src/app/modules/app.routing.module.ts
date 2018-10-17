@@ -4,9 +4,11 @@ import { HomeComponent } from '../home/home.component';
 import { LoginComponent } from '../login/login.component';
 import { PerfilComponent } from '../perfil/perfil.component';
 import { UsuariosComponent } from '../usuarios/usuarios.component';
+import { AuthenticationGuard } from '../authentication-guard.service'
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent , 
+  { path: 'home', component: HomeComponent ,
+    canActivate: [ AuthenticationGuard ],
     children: [
       { path: '', component: UsuariosComponent },
       { path: 'usuarios', component: UsuariosComponent },

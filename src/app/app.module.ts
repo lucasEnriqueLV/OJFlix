@@ -4,6 +4,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CustomMaterialModule } from './modules/material.module';
 import { AppRoutingModule } from './modules/app.routing.module';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -13,7 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { AuthenticationService } from './services/authentication.service';
-import { AuthenticationGuard } from './authentication-guard.service'
+import { AuthenticationGuard } from './authentication-guard.service';
 import { HttpModule } from '@angular/http'; 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -37,6 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpModule,
     HttpClientModule,
+    MatExpansionModule,
+    MatDividerModule
   ],
   providers: [
     AuthenticationService,

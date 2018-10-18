@@ -1,3 +1,11 @@
-<p>
-  Usuarios
-</p>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let usuario of usuarios">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{usuario.username}} 
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list-item>{{usuario.id}}</mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-expansion-panel>
+</mat-accordion>

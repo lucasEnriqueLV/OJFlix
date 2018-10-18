@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Injectable()
@@ -33,8 +33,10 @@ export class AuthenticationService {
         ).subscribe(
             (parameter: any) => {
               console.log(parameter)
+
+              // """""Autenticador"""""
               parameter.forEach(Usuario => {
-                console.log(Usuario)
+                //console.log(Usuario)
                 if(Usuario.username == username && Usuario.password == password) {
                     loginStatus = true;
                     localStorage.setItem('idToken', Usuario.id);
